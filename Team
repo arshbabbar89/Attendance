@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team Attendance</title>
+	<style>
+		.present {
+			background-color: green;
+		}
+		.absent {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Team Attendance</h1>
+	<p>Click on a person's name to toggle their attendance:</p>
+	<ul>
+		<li><button id="Person1" onclick="toggleAttendance('person1')">Arsh</button></li>
+		<li><button id="Sachin B" onclick="toggleAttendance('person2')">Person 2</button></li>
+		<li><button id="Uddave J" onclick="toggleAttendance('person3')">Person 3</button></li>
+		<li><button id="Pankaj P" onclick="toggleAttendance('person4')">Person 4</button></li>
+		<li><button id="Debasish B" onclick="toggleAttendance('person5')">Person 5</button></li>
+		<li><button id="Ravi K" onclick="toggleAttendance('person6')">Person 6</button></li>
+		<li><button id="Arjun K" onclick="toggleAttendance('person7')">Person 7</button></li>
+		<li><button id="Muneesha" onclick="toggleAttendance('person8')">Person 8</button></li>
+		<li><button id="Govind P" onclick="toggleAttendance('person9')">Person 9</button></li>
+		<li><button id="Rishi G" onclick="toggleAttendance('person10')">Person 10</button></li>
+		<li><button id="Sandeep R" onclick="toggleAttendance('person11')">Person 11</button></li>
+		<li><button id="Divya K" onclick="toggleAttendance('person12')">Person 12</button></li>
+		<li><button id="Jose Miguel Guel" onclick="toggleAttendance('person13')">Person 13</button></li>
+		<li><button id="Erik A" onclick="toggleAttendance('person14')">Person 14</button></li>
+		<li><button id="Mauricio" onclick="toggleAttendance('person15')">Person 15</button></li>
+		<li><button id="Manjinder V" onclick="toggleAttendance('person16')">Person 16</button></li>
+		<li><button id="Anil S" onclick="toggleAttendance('person17')">Person 17</button></li>
+		<li><button id="Bharti Y" onclick="toggleAttendance('person18')">Person 18</button></li>
+		<li><button id="Pooja D" onclick="toggleAttendance('person19')">Person 19</button></li>
+		<li><button id="Amit S" onclick="toggleAttendance('person20')">Person 20</button></li>
+	</ul>
+
+	<script>
+		function toggleAttendance(id) {
+			var button = document.getElementById(id);
+			if (button.className == 'present') {
+				button.className = 'absent';
+			} else {
+				button.className = 'present';
+			}
+		}
+	</script>
+</body>
+</html>
