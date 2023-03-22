@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team Attendance</title>
+	<style>
+		.present {
+			background-color: green;
+		}
+		.absent {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Team Attendance</h1>
+	<p>Click on a person's name to toggle their attendance:</p>
+	<ul>
+		<li><button id="person1" onclick="toggleAttendance('person1')">Person 1</button></li>
+		<li><button id="person2" onclick="toggleAttendance('person2')">Person 2</button></li>
+		<li><button id="person3" onclick="toggleAttendance('person3')">Person 3</button></li>
+		<li><button id="person4" onclick="toggleAttendance('person4')">Person 4</button></li>
+		<li><button id="person5" onclick="toggleAttendance('person5')">Person 5</button></li>
+	</ul>
+
+	<script>
+		function toggleAttendance(id) {
+			var button = document.getElementById(id);
+			if (button.className == 'present') {
+				button.className = 'absent';
+			} else {
+				button.className = 'present';
+			}
+		}
+	</script>
+</body>
+</html>
